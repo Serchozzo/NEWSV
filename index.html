@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana de Vinculación</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=Press+Start+2P&display=swap');
+
+        body {
+            background-color: black;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.gifer.com/1Y61.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            position: relative;
+            padding-top: 50px;
+        }
+
+        .title {
+            font-size: 8vw;
+            text-shadow: 3px 3px #000000;
+            margin-bottom: 20px;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+            animation: glow 1s infinite alternate;
+            position: relative;
+            z-index: 2;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #004aad;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #004aad;
+            }
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .button {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            font-size: 5vw;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            color: black;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            color: #fff;
+            background-color: #ff0000;
+        }
+
+        @media screen and (max-width: 600px) {
+            .title {
+                font-size: 10vw;
+            }
+            .button {
+                font-size: 6vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Semana de Vinculación</h1>
+        <div class="buttons-container">
+            <a class="button" href="https://forms.gle/cMNpYd6pGXPE36VV7" target="_blank">Registro</a>
+        </div>
+    </div>
+
+    <!-- Sonido de fondo desde SoundCloud -->
+    <iframe width="0" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/greedyfraggottv/king-dededes-theme-kirby-super-star&color=%2300aabb&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+</body>
+</html>
